@@ -1,5 +1,5 @@
 * {
-    background-color: #ededed;
+    background-color: white;
     margin: 0;
     font-family: 'Roboto', sans-serif;;
 }
@@ -25,31 +25,11 @@ header {
 
 .selectors {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
    
 }
-
-#colorPickerText {
-    color: #0098db;
-}
-
-#colorPicker {
-    width: 80px;
-    height: 80px;
-    border: none;  
-}
-
-input[type='color']::-webkit-color-swatch-wrapper {
-    padding: 0;
-  }
-  
-input[type='color']::-webkit-color-swatch {
-    border: none;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
 
 .selectorBtns {
     width: 158px;
@@ -64,21 +44,27 @@ input[type='color']::-webkit-color-swatch {
     font-size: 15px;
 }
 
-.changeGridText {
-    color: #0098db;
-}
 
 .gridCrt {
     width: 500px;
     height: 500px;
     display: grid;
+    border: solid 3px #0098db;
+}
+
+.changeGridText {
+    display: flex;
+    justify-content: center;
+    color: #0098db;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .gridSizeCrt {
     display: flex;
     justify-content: center;
     gap: 10px;
-   margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 #sizeInput {
