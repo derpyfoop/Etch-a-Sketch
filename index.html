@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header>
+    <h1 class="headerText">Etch-a-Sketch</h1>
+</header>
 <body>
+    <div class="mainCrt">
+        <div class="selectors">
+            <label for="colorpicker" id="colorPickerText">Color Picker:</label>
+            <input type="color" id="colorPicker" value="#0098db">
+            <button id="setColorBtn" class="selectorBtns">Set Color Mode</button>
+            <button id="RainbowBtn" class="selectorBtns">Rainbow Mode</button>
+            <button id="earserBtn" class="selectorBtns">Eraser</button>
+            <button id="resetBtn" class="selectorBtns">Reset</button>
+        </div>
+        <div id="gridCrt"></div>
+    </div>
     
 </body>
 <script src="script.js"></script>
